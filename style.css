@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+p, a, h1, h2 {
+    color: #333;
+    line-height: 1.6;
+}
+
+body {
+    background-color:beige;
+}
+
+html {
+    display: block
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    background: url('./media/headerImage.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+section .main-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+} 
+
+header nav .logo img {
+    display: flex;
+    height: 4rem;
+    width: 4rem;
+    gap: 10px;
+    border-radius: 50%;
+}
+
+header nav {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px; 
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #333;
+}
+
+header nav ul li a:hover {
+    color: #e3884f;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main section {
+    margin: 20px 0;
+}
+
+h1 {
+    font-family: 'Garamond', serif;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+p {
+    max-width: 700px;
+    text-align: center;
+    padding: 0 15px;
+    font-size: 1.125rem;
+    margin: 0 auto;
+    max-width: 700px;
+    font-weight: bold;
+}
+
+
