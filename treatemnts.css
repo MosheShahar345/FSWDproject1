@@ -79,7 +79,8 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5em;
     color: #000;
 }
 
@@ -139,22 +140,29 @@ table tbody tr:nth-child(even) {
     margin: 2rem auto;
     text-align: left;
 }
+
+.general-information li {
+    margin: 2rem;
+}
    
 
-.Our-therapists{
+.Our-therapists {
     text-align: center;
     padding: 20px;
+    margin-bottom: 0.4em;
 }
-.Our-therapists-gallery{
+
+.Our-therapists-gallery {
     display: flex;
     justify-content: center;
-    gap: 20px;
 }
+
 #Our-therapists-gallery img {
     width: 170px;
     height: 250px;
     border-radius: 8px;
     transition: transform 0.3s ease;
+    margin: 0 0.6rem;
 }
 
 #Our-therapists-gallery img:hover {
@@ -163,7 +171,6 @@ table tbody tr:nth-child(even) {
 
 .contact {
     font-family: Arial, sans-serif;
-    background-color: rgb(249, 243, 213); 
     box-shadow: 0 4px 8px rgb(0,0,0,0.1);
     padding: 0.05rem;
     max-width: 600px; 
@@ -215,15 +222,15 @@ table tbody tr:nth-child(even) {
     background-color: #333; 
 }
 
-.contact-info {
-    margin-top: 20px;
+#contact-info {
+    margin-top: 1.5em;
     text-align: center;
     font-size: 14px;
     color: #333;
     width: 100%;
 }
 
-.contact-info strong {
+#contact-info strong {
     font-weight: bold;
     color: #000;
 }
