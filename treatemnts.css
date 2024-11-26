@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+body {
+    font-family: 'Garamond', serif;
+    background-color: floralwhite;
+    font-size: clamp(1rem, 1.5vw, 1.8rem);
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+header {
+    position: relative;
+    color: white;
+    text-align: center;
+    background-color:rgb(249, 243, 213); ;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+} 
+
+header nav .logo img {
+    display: flex;
+    height: 4rem;
+    width: 4rem;
+    gap: 10px;
+    border-radius: 50%;
+}
+
+header nav {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px; 
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+header nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #333;
+}
+
+header nav ul li a:hover {
+    color: #e3884f;
+}
+h1, h2 {
+    text-align: center;
+    font-family: 'Garamond', serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: clamp(2rem, 4vw, 5rem);
+    color: #000;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: #000;
+}
+
+.full-treatment-menu {
+    padding: 0.5rem 10%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items:center; 
+    flex-direction: column;
+    max-width: 80%;
+    padding: 2rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    padding: 0 20px;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    table-layout: fixed;
+}
+
+table thead {
+    background-color:#f7dea0  ;
+    color: black;
+}
+
+table th, table td {
+    padding: 15px;
+    border-bottom: 1px solid #fff1c1;
+    width: 33.33%;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: rgb(249, 243, 213);
+}
+
+.general-information {
+    padding: 2rem;
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 80%;
+    margin: 2rem auto;
+    text-align: left;
+}
+   
+
+.Our-therapists{
+    text-align: center;
+    padding: 20px;
+}
+.Our-therapists-gallery{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#Our-therapists-gallery img {
+    width: 170px;
+    height: 250px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+#Our-therapists-gallery img:hover {
+    transform: scale(1.05);
+}
+
+.contact {
+    font-family: Arial, sans-serif;
+    background-color: rgb(249, 243, 213); 
+    box-shadow: 0 4px 8px rgb(0,0,0,0.1);
+    padding: 0.05rem;
+    max-width: 600px; 
+    margin: auto;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 22px; 
+    color: #333;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    width: 100%; 
+    margin: 0.15em;
+}
+
+.form-input {
+    flex: 1; 
+    padding: 10px;
+    border-radius: 5px; 
+    box-sizing: border-box;
+    text-align: left;
+    background-color:beige; 
+    font-size: 14px;
+}
+
+.form-button {
+    background-color: #000; 
+    color: #fff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.form-button:hover {
+    background-color: #333; 
+}
+
+.contact-info {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    width: 100%;
+}
+
+.contact-info strong {
+    font-weight: bold;
+    color: #000;
+}
+@media screen and (max-width: 680px) {
+    body {
+        font-size: clamp(0.9rem, 3vw, 1.2rem); /* שינוי גודל הטקסט */
+    }
+
+    header nav {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 15px; 
+    }
+
+    header nav .logo img {
+        height: 3rem;
+        width: 3rem; 
+    }
+
+    section {
+        padding: 1rem 5%; 
+    }
+
+    table {
+        font-size: 0.9rem; 
+        width: 100%; 
+    }
+
+    .general-information, .full-treatment-menu {
+        padding: 1.5rem; 
+        margin-top: 1rem;
+    }
+
+    .contact {
+        padding: 10px;
+        max-width: 100%; 
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 15px; 
+    }
+
+    .form-group {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .form-input {
+        width: 100%; 
+    }
+
+    .form-button {
+        width: 100%; 
+        padding: 12px;
+    }
+
+    .contact-info {
+        font-size: 12px; 
+    }
+}
