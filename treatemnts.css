@@ -5,7 +5,7 @@
     scrollbar-width: none;
 }
 
-body {
+body, html {
     font-family: 'Garamond', serif;
     background-color: floralwhite;
     font-size: clamp(1rem, 1.5vw, 1.8rem);
@@ -16,17 +16,9 @@ body {
 
 header {
     position: relative;
-    color: white;
     text-align: center;
     background-color:rgb(249, 243, 213); ;
 }
-
-.main-image {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    display: block;
-} 
 
 header nav .logo img {
     display: flex;
@@ -42,6 +34,7 @@ header nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 100%;
     padding: 10px 20px; 
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.3);
@@ -57,6 +50,7 @@ header nav ul {
 header nav ul li a {
     text-decoration: none;
     font-weight: bold;
+    color: #333;
 }
 
 a:visited {
@@ -66,6 +60,7 @@ a:visited {
 header nav ul li a:hover {
     color: #e3884f;
 }
+
 h1, h2 {
     text-align: center;
     font-family: 'Garamond', serif;
@@ -146,18 +141,18 @@ table tbody tr:nth-child(even) {
 }
    
 
-.Our-therapists {
+.our-therapists {
     text-align: center;
     padding: 20px;
     margin-bottom: 0.4em;
 }
 
-.Our-therapists-gallery {
+.our-therapists-gallery {
     display: flex;
     justify-content: center;
 }
 
-#Our-therapists-gallery img {
+#our-therapists-gallery img {
     width: 170px;
     height: 250px;
     border-radius: 8px;
@@ -165,7 +160,7 @@ table tbody tr:nth-child(even) {
     margin: 0 0.6rem;
 }
 
-#Our-therapists-gallery img:hover {
+#our-therapists-gallery img:hover {
     transform: scale(1.05);
 }
 
@@ -234,9 +229,10 @@ table tbody tr:nth-child(even) {
     font-weight: bold;
     color: #000;
 }
-@media screen and (max-width: 680px) {
+
+@media (max-width: 600px) {
     body {
-        font-size: clamp(0.9rem, 3vw, 1.2rem); /* שינוי גודל הטקסט */
+        font-size: clamp(0.9rem, 3vw, 1.2rem);
     }
 
     header nav {

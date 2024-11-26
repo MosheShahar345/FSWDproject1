@@ -13,7 +13,8 @@ p, a, h1, h2 {
 body, html {
     background-color:floralwhite;
     font-size: clamp(1rem, 1.5vw, 1.8rem);
-    display: block
+    display: block;
+    font-family: 'Garamond', serif;
 }
 
 header {
@@ -24,10 +25,6 @@ header {
     text-align: center;
     width: 100%;
     display: block;
-}
-
-body {
-    font-family: 'Garamond', serif;
 }
 
 header nav .logo img {
@@ -62,6 +59,7 @@ header nav ul {
 header nav ul li a {
     text-decoration: none;
     font-weight: bold;
+    color: #333;
 }
 
 header nav ul li a:hover {
@@ -81,17 +79,7 @@ main section {
     margin: 2% 0;
 }
 
-@media (max-width: 1440px) {
-    main {
-        padding: 5% 8%;
-    }
-
-    main section {
-        margin: 3% 0;
-    }
-}
-
-@media (max-width: 1080px) {
+@media (max-width: 600px) {
     main {
         padding: 5% 6%;
     }
@@ -102,7 +90,6 @@ main section {
 }
 
 h1 {
-    font-family: 'Garamond', serif;
     font-weight: bold;
     text-align: center;
     margin-top: 6rem;
@@ -185,7 +172,7 @@ ul li hr {
     object-fit: fill;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 600px) {
     #menu {
         flex-direction: column;
         align-items: center;
@@ -214,7 +201,7 @@ ul li hr {
 
 .view {
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     justify-content: center;
     justify-self: center;
@@ -233,7 +220,7 @@ ul li hr {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .grid-gallery {
         grid-template-columns: 1fr;
     }
@@ -311,7 +298,7 @@ ul li hr {
     color: #000;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 600px) {
     body {
         font-size: clamp(0.9rem, 3vw, 1.2rem);
     }
