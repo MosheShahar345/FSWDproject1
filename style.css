@@ -58,9 +58,12 @@ header nav {
     backdrop-filter: blur(10px);
 }
 
+ul {
+    list-style: none;
+}
+
 header nav ul {
     display: flex;
-    list-style: none;
     gap: 30px;
 }
 
@@ -132,6 +135,21 @@ section#about iframe.about-video {
     margin-top: 2em;
     display: block;
     border: none;
+}
+
+.list-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+ul li hr {
+    border: none;
+    background-color: #333;
+    border-top: 4px solid #333;
+    width: 100%;
+    margin: 2rem 0;
 }
 
 
