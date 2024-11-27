@@ -12,6 +12,8 @@ body, html {
     color: #333;
     line-height: 1.6;
     text-align: center;
+    scroll-behavior: smooth;
+    
 }
 
 header {
@@ -39,6 +41,12 @@ header nav {
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
+    animation: slideInFromRight 1.5s ease-out;
+
+}
+@keyframes slideInFromRight {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
 }
 
 header nav ul {

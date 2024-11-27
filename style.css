@@ -8,13 +8,21 @@
 p, a, h1, h2 {
     color: #333;
     line-height: 1.6;
+    animation: slideIn 3s ease-out;
+}
+
+@keyframes slideIn {
+    0% { left: -100%; opacity: 0; }
+    100% { left: 0; opacity: 1; }
 }
 
 body, html {
     background-color:floralwhite;
     font-size: clamp(1rem, 1.5vw, 1.8rem);
-    display: block;
     font-family: 'Garamond', serif;
+    text-align: center;
+    scroll-behavior: smooth;
+
 }
 
 header {
@@ -45,6 +53,12 @@ header nav {
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
+    animation: slideInFromRight 1.5s ease-out;
+
+}
+@keyframes slideInFromRight {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
 }
 
 ul {
@@ -220,20 +234,8 @@ ul li hr {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 600px) {
-    .grid-gallery {
-        grid-template-columns: 1fr;
-    }
-    .grid-gallery img {
-
-        margin: 0 200px;
-
-    }
-}
-
-.contact {
+#contact {
     font-family: Arial, sans-serif;
-    background-color: rgb(249, 243, 213); 
     box-shadow: 0 4px 8px rgb(0,0,0,0.1);
     padding: 0.05rem;
     max-width: 600px; 
@@ -245,7 +247,7 @@ ul li hr {
     text-align: center;
 }
 
-.contact h2 {
+#contact h2 {
     font-size: 22px; 
     color: #333;
     margin: 10px 0;
@@ -285,17 +287,32 @@ ul li hr {
     background-color: #333; 
 }
 
-.contact-info {
-    margin-top: 20px;
+#contact-info {
+    margin-top: 1.5em;
     text-align: center;
     font-size: 14px;
     color: #333;
     width: 100%;
 }
+#contact-info p{
+    font-size: 20px;
+}
 
-.contact-info strong {
+#contact-info strong {
     font-weight: bold;
     color: #000;
+}
+
+
+@media (max-width: 600px) {
+    .grid-gallery {
+        grid-template-columns: 1fr;
+    }
+    .grid-gallery img {
+
+        margin: 0 200px;
+
+    }
 }
 
 @media (max-width: 600px) {

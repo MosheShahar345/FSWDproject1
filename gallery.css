@@ -4,7 +4,9 @@
     box-sizing: border-box;
     scrollbar-width: none;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Garamond', serif;
     background-color: floralwhite;
@@ -39,6 +41,11 @@ header nav {
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
+    animation: slideInFromRight 1.5s ease-out;
+}
+@keyframes slideInFromRight {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
 }
 
 header nav ul {
@@ -168,11 +175,63 @@ h1 {
     .gallery-container {
         grid-template-columns: repeat(2, 1fr); 
     }
+    .contact {
+        padding: 10px;
+        max-width: 100%; 
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 15px; 
+    }
+
+    .form-group {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .form-input {
+        width: 100%; 
+    }
+
+    .form-button {
+        width: 100%; 
+        padding: 12px;
+    }
+
+    .contact-info {
+        font-size: 12px; 
+    }
 }
 
 @media (max-width: 480px) {
     .gallery-container {
         grid-template-columns: 1fr;
+    }
+    .contact {
+        padding: 10px;
+        max-width: 100%; 
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 15px; 
+    }
+
+    .form-group {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .form-input {
+        width: 100%; 
+    }
+
+    .form-button {
+        width: 100%; 
+        padding: 12px;
+    }
+
+    .contact-info {
+        font-size: 12px; 
     }
 }
 
