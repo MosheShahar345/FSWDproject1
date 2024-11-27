@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+body {
+    font-family: 'Garamond', serif;
+    background-color: floralwhite;
+    font-size: clamp(1rem, 1.5vw, 1.8rem);
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+header {
+    position: relative;
+    color: white;
+    text-align: center;
+    background-color:rgb(249, 243, 213); ;
+}
+
+header nav .logo img {
+    display: flex;
+    height: 4rem;
+    width: 4rem;
+    gap: 10px;
+    border-radius: 50%;
+}
+
+header nav {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px; 
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+header nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #333;
+}
+
+header nav ul li a:hover {
+    color: #e3884f;
+}
+
+h1 {
+    font-size: 2.5rem;
+    padding: 20px;
+    color: black;
+    text-align: center;
+}
+
+.Our-therapists {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0.4em;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 1rem; 
+    padding: 3em; 
+}
+
+.gallery-container img {
+    width: 100%; 
+    aspect-ratio: 4 / 3; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    transition: transform 0.3s ease; 
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05); 
+}
+
+.contact {
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgb(0,0,0,0.1);
+    padding: 0.05rem;
+    max-width: 600px; 
+    margin: auto;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 22px; 
+    color: #333;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    width: 100%; 
+    margin: 0.15em;
+}
+
+.form-input {
+    flex: 1; 
+    padding: 10px;
+    border-radius: 5px; 
+    box-sizing: border-box;
+    text-align: left;
+    background-color:beige; 
+    font-size: 14px;
+}
+
+.form-button {
+    background-color: #000; 
+    color: #fff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.form-button:hover {
+    background-color: #333; 
+}
+
+#contact-info {
+    margin-top: 1.5em;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    width: 100%;
+}
+
+#contact-info strong {
+    font-weight: bold;
+    color: #000;
+}
+
+@media (max-width: 1024px) {
+    .gallery-container {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
