@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online booking</title>
+  <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html#about">About</a></li>
+                <li><a href="./index.html">Treatment Menu</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="#contact-info">Contact Us</a></li>
+            </ul>
+            <div class="logo">
+                <a href="./index.html#home"><img src="./media/logo.jpg" alt="Spa's logo" /></a>
+            </div>
+        </nav>
+    </header>
+
+  <main class="booking-section">
+    <h2>Choose your service</h2>
+    <form action="#" method="POST" class="booking-form">
+      <label for="treatment">Choose a treatment: </label>
+      <select id="treatment" name="treatment" required>
+        <option value="">Choose...</option>
+        <option value="swedish">Classic Swedish</option>
+        <option value="polarity">Polarity</option>
+        <option value="Hot Stones">Hot Stones</option>
+        <option value="Earth">Earth (Reflexology)</option>
+        <option value="Combination">Combination</option>
+        <option value="Deep Tissue">Deep Tissue</option>
+        <option value="Soft Power">Soft Power</option>
+        <option value="Muscling">Muscling</option>
+        <option value="Duet">Duet</option>
+      </select>
+
+      
+      <label for="date" >Choose a date: </label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time"> Choose a time: </label>
+      <input type="time" id="time" name="time" required>
+
+      <h2>Special additions: </h2>
+      <div class="checkbox-group">
+        <label>
+          <input type="checkbox" name="options" value="champagne">Bottle of champagne (An addition of 70₪)
+        </label>
+        <label>
+          <input type="checkbox" name="options" value="candlelight">Candle lighting (An addition of 70₪)
+        </label>
+        <label>
+          <input type="checkbox" name="options" value="flowers">Flower arrangement (An addition of 100₪)
+        </label>
+        <label>
+          <input type="checkbox" name="options" value="Lunch">Lunch (An addition of 65₪)
+        </label>
+      </div>
+
+      <button type="submit" class="btn-submit">Order now</button>
+    </form>
+  </main>
+</html>
