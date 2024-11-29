@@ -66,7 +66,6 @@ h1, h2 {
     text-align: center;
     font-family: 'Garamond', serif;
     font-weight: bold;
-    animation: slideIn 3s ease-out;
 }
 
 @keyframes slideIn {
@@ -75,6 +74,7 @@ h1, h2 {
 }
 
 h1 {
+    animation: slideIn 3s ease-out;
     font-size: clamp(2rem, 4vw, 5rem);
     color: #000;
 }
@@ -147,7 +147,6 @@ table tbody tr:nth-child(even) {
     margin: 2rem;
 }
    
-
 .our-therapists {
     text-align: center;
     padding: 20px;
@@ -172,7 +171,6 @@ table tbody tr:nth-child(even) {
 }
 
 .contact {
-    font-family: Arial, sans-serif;
     box-shadow: 0 4px 8px rgb(0,0,0,0.1);
     padding: 0.05rem;
     max-width: 600px; 
