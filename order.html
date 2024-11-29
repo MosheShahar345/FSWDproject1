@@ -12,7 +12,7 @@
             <ul class="nav-links">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./index.html#about">About</a></li>
-                <li><a href="./index.html">Treatment Menu</a></li>
+                <li><a href="./treatments.html">Treatment Menu</a></li>
                 <li><a href="./gallery.html">Gallery</a></li>
                 <li><a href="#contact-info">Contact Us</a></li>
             </ul>
@@ -23,9 +23,9 @@
     </header>
 
   <main class="booking-section">
-    <h2>Choose your service</h2>
+    <h2>Choose Your Service</h2>
     <form action="#" method="POST" class="booking-form">
-      <label for="treatment">Choose a treatment: </label>
+      <label for="treatment">Treatment Type: </label>
       <select id="treatment" name="treatment" required>
         <option value="">Choose...</option>
         <option value="swedish">Classic Swedish</option>
@@ -40,13 +40,13 @@
       </select>
 
       
-      <label for="date" >Choose a date: </label>
+      <label for="date">Date: </label>
       <input type="date" id="date" name="date" required>
 
-      <label for="time"> Choose a time: </label>
+      <label for="time">Time: </label>
       <input type="time" id="time" name="time" required>
 
-      <h2>Special additions: </h2>
+      <h2>Special Additions: </h2>
       <div class="checkbox-group">
         <label>
           <input type="checkbox" name="options" value="champagne">Bottle of champagne (An addition of 70₪)
@@ -62,7 +62,24 @@
         </label>
       </div>
 
-      <button type="submit" class="btn-submit">Order now</button>
+      <button type="submit" class="btn-submit">Order Now</button>
     </form>
   </main>
+
+  <footer id="contact">
+    <h2>For more details:</h2>
+    <form>
+        <div class="form-group">
+            <input type="text" placeholder="name:" class="form-input">
+            <input type="text" placeholder="phone:" class="form-input">
+            <button type="submit" class="form-button">send</button>
+        </div>
+        
+    </form>
+    <div id="contact-info">
+        <p><strong>Operating hours:</strong> Sunday-Saturday 10:00-20:00 </p>
+        <p><strong>Address:</strong> bro's st 1</p>
+        <p><strong>Email:</strong> bro's@argamanspa.com</p>
+    </div>
+</footer>
 </html>
