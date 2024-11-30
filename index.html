@@ -9,14 +9,14 @@
 </head>
 <body>
     <header>
-        <input type="checkbox" id="toggle">
+        <input type="checkbox" id="toggle" class="toggle">
         <nav>
             <label class="navbar-toggler" for="toggle">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </label>
-
+            
             <ul class="nav-list">
                 <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
@@ -25,9 +25,9 @@
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
             </ul>
             <div class="button-logo-container">
-                <a href="./order.html"><button type="submit" class="btn-submit">Book</button></a>
+                <a href="./order.html"><button type="submit" class="btn-book">Book</button></a>
                 <div class="logo">
-                    <a href="#home"><img src="./media/logo.jpg" alt="Bro Spa's logo" /></a>
+                    <a href="./index.html"><img src="./media/logo.jpg" alt="Bro Spa's logo" /></a>
                 </div>
             </div>
         </nav>
@@ -53,15 +53,16 @@
            </iframe>
         </section>
         <section id="menu">
-            <ul class="list-menu">
-                <li><b>A Selection of Indulgent Massages</b> <hr></li>
-                <li>For the body <hr></li>
-                <li>For the soul <hr></li>
-                <li>For grooming <hr></li>
-                <li><a href="./treatments.html"><button type="button" class="about-click" name="about-click" >For Full Treatment Menu >></button></a></li>
-            </ul>
-            <img src="https://westspaashdod.co.il/wp-content/uploads/2024/05/our-treatments-scaled.jpg" alt="An Image of Massage">
-
+            <div class="menu-content">
+                <ul class="list-menu">
+                    <li><b>A Selection of Indulgent Massages</b> <hr></li>
+                    <li>For the body <hr></li>
+                    <li>For the soul <hr></li>
+                    <li>For grooming <hr></li>
+                    <li><a href="./treatments.html"><button type="button" class="about-click" name="about-click">For Full Treatment Menu >></button></a></li>
+                </ul>
+                <img class="menu-image" src="./media/our-treatments-1366x2048.jpg" alt="An Image of Massage">
+            </div>
         </section>
         <section class="view">
             <img src="./media/n&m.jpg" alt="">
@@ -69,20 +70,20 @@
             <img src="./media/n&m.jpg" alt="">
         </section>
     </main>
-    <footer class="contact">
-        <h2>For more details:</h2>
+    <footer id="contact">
+        <h2>For More Details:</h2>
         <form>
             <div class="form-group">
-                <input type="text" placeholder="name:" class="form-input">
-                <input type="text" placeholder="phone:" class="form-input">
-                <button type="submit" class="form-button">send</button>
+                <input type="text" placeholder="Name:" class="form-input">
+                <input type="text" placeholder="Phone:" class="form-input">
+                <button type="submit" class="form-button">Send</button>
             </div>
             
         </form>
         <div id="contact-info">
-            <p><strong>Operating hours:</strong> Sunday-Saturday 10:00-20:00 </p>
-            <p><strong>Address:</strong> bro's st 1</p>
-            <p><strong>Email:</strong> bro's@argamanspa.com</p>
+            <p><strong>Operating Times:</strong> Sunday-Saturday 09:00-23:00</p>
+            <p><strong>Address:</strong> Bro's St 1</p>
+            <p><strong>Email:</strong> bro's@gmail.com</p>
         </div>
     </footer>
     </body>
