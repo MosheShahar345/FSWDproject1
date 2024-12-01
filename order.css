@@ -338,6 +338,13 @@ p {
     nav .navbar-toggler {
         display: grid !important;
     }
+    input[type="date"], input[type="time"] {
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    
     /* גלילה*/
     .checkbox-group {
         display: flex;

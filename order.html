@@ -52,10 +52,35 @@
 
       
       <label for="date">Date: </label>
-      <input type="date" id="date" name="date" required>
+      <input type="date" id="date" name="date" required min="2024-01-01" max="2024-12-31">
 
       <label for="time">Time: </label>
-      <input type="time" id="time" name="time" required>
+      <input type="time" id="time" name="time" required list="time-options">
+
+      <datalist id="time-options">
+        <option value="10:00">
+        <option value="10:30">
+        <option value="11:00">
+        <option value="11:30">
+        <option value="12:00">
+        <option value="12:30">
+        <option value="13:00">
+        <option value="13:30">
+        <option value="14:00">
+        <option value="14:30">
+        <option value="15:00">
+        <option value="15:30">
+        <option value="16:00">
+        <option value="16:30">
+        <option value="17:00">
+        <option value="17:30">
+        <option value="18:00">
+        <option value="18:30">
+        <option value="19:00">
+        <option value="19:30">
+        <option value="20:00">
+      </datalist>
+
 
       <h2>Special Additions: </h2>
       <div class="checkbox-group">
