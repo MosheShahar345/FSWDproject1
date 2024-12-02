@@ -243,7 +243,6 @@ p {
     margin: 0 auto 1rem
 }
 
-
 .form-input {
     flex: 1; 
     padding: 10px;
@@ -306,7 +305,7 @@ p {
         display: grid;
         position: absolute;
         width: 100%;
-        top: 75px;
+        top: 68px;
         left: 0;
         transform: translateY(-150%);
         transition: .4s ease;

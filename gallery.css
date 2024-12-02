@@ -266,7 +266,7 @@ p {
         display: grid;
         position: absolute;
         width: 100%;
-        top: 75px;
+        top: 68px;
         left: 0;
         transform: translateY(-150%);
         transition: .4s ease;
