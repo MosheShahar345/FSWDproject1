@@ -503,9 +503,9 @@ nav .navbar-toggler .bar {
     display: none;
 }
 
-#toggle:checked ~ nav .nav-list {
+/* #toggle:checked ~ nav .nav-list {
     transform: translateY(0);
-}
+} */
 
 #toggle:checked ~ nav .navbar-toggler .bar:nth-child(1) {
     position: absolute;
