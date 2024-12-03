@@ -522,7 +522,7 @@ nav .navbar-toggler .bar {
     width: 40px;
     height: 5px;
     margin-bottom: 10px;
-    background: #000;;
+    background: #000;
     border-radius: 10%;
     transition: .4s;
 }
@@ -531,9 +531,9 @@ nav .navbar-toggler .bar {
     display: none;
 }
 
-/* #toggle:checked ~ nav .nav-list {
+#toggle:checked ~ nav .nav-list {
     transform: translateY(0);
-} */
+}
 
 #toggle:checked ~ nav .navbar-toggler .bar:nth-child(1) {
     position: absolute;
