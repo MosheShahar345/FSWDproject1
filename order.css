@@ -207,6 +207,20 @@ p {
     margin: 0; 
 }
 
+ .checkbox-group input[type="checkbox"]:checked {
+    animation: bounce 0.4s ease;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+} 
+/*שטויות סוף*/
+
 .btn-submit {
     padding: 10px 20px;
     margin: 1em;
