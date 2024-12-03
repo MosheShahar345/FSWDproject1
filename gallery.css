@@ -239,6 +239,10 @@ p {
         padding: 0 20px;
     }
 
+    .gallery-container {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+
 }
 
 @media screen and (max-width: 675px) {
@@ -335,6 +339,12 @@ p {
     }
 }
 
+@media screen and (max-width: 530px) {
+
+    .gallery-container {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
 nav .navbar-toggler {
     display: none;
     height: min-content;
